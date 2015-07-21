@@ -36,15 +36,15 @@ p.getMovies = function () {
 
 p.afficherFilms = function (json) {
     var para, h3, br, img;
-    p.get("main").innerText = "";
+    p.get("main").textContent = "";
     for (var i = 0; i < json.results.length; i += 1) {
         img = document.createElement('img');
         para = document.createElement('p');
         h3 = document.createElement('h3');
         br = document.createElement('br');
 
-        para.innerText = json.results[i].overview;
-        h3.innerText = json.results[i].title;
+        para.textContent = json.results[i].overview;
+        h3.textContent = json.results[i].title;
         img.src = p.baseUrl + "w185" + json.results[i].poster_path;
         img.className = "gauche";
         br.className = "clear";
@@ -92,7 +92,7 @@ p.pageLoad = function () {
           var op;
           for (var i = 0; i < list.genres.length; i += 1) {
              op = document.createElement("option");
-             op.innerText = list.genres[i].name;
+             op.textContent = list.genres[i].name;
              op.value = list.genres[i].id;
              p.get("ListeCategories").appendChild(op);
           }

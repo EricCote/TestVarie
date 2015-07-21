@@ -43,7 +43,7 @@ function calcul() {
     }
     else {
 
-        var tps = montant * 0.05;
+        var tps = montant * 0.06;
         console.log("tps ", tps);
         var tvq = (montant + tps) * 0.095;
         var total = montant + tps + tvq;

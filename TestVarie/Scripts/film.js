@@ -67,7 +67,6 @@ p.initConfig = function()  {
        if (this.readyState === 4) {
           var list = JSON.parse(this.responseText);
           p.baseUrl = list.images.base_url;
-       
        }
     };
 

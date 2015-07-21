@@ -5,6 +5,7 @@ ehthumbs.db
 packages/
 bin/
 obj/
+app_data/
 
 # Folder config file
 Desktop.ini

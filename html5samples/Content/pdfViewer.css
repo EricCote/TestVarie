@@ -1,0 +1,37 @@
+﻿h1{
+    font-family: 'Permanent Marker', cursive;
+    color: red;
+    font-size:100px;
+    text-shadow: 5px 5px 3px  black;
+    word-spacing: -20px;
+    transform:rotate(-6deg);
+}
+
+
+.Gauche {
+    width:20%;
+    float:left;
+}
+
+.Droite {
+    width:70%;
+    float:Right;
+}
+
+@media(max-width:500px) {
+    h1 {
+        font-size:30px;
+    }
+
+    .Gauche {
+        float:none;
+        width:100%;
+    
+    }
+    .Droite {
+        float:none;
+        width:100%;
+    
+    }
+}
+

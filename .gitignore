@@ -2,6 +2,13 @@
 Thumbs.db
 ehthumbs.db
 
+packages/
+bin/
+obj/
+app_data/
+*.zip
+*.bak
+
 # Folder config file
 Desktop.ini
 

@@ -1,0 +1,59 @@
+Liens
+
+
+PlayGrounds:
+jsbin.com
+JSfiddle.net
+codepen.io    
+plnkr.co       plunker 
+www.first-jump.com/app/webcode 
+liveweave.com
+cssdeck.com
+dabblet.com
+howjs.com
+codeply.com
+bootply.com
+
+Actualités:
+sitepoint.com            Actualité Web
+alistapart.com           Design Web
+smashingmagazine.com     Design web
+webstandardssherpa.com
+
+
+Démos 
+www.html5rocks.com        Démos html5 
+dev.modern.ie/testdrive/  Démos html5 par MS
+demos.mozilla.org         Démos Mozilla
+studio.html5rocks.com     Démos html5 
+www.chromeexperiments.com Démos Chrome
+ 
+Docs HTML5
+developer.mozilla.org   Tutorial de Firefox 
+docs.webplatform.org    Documentation HTML5
+www.W3C.org             Standard HTML5
+www.w3.org/community/webed/wiki/HTML/Elements  Liste des elements
+www.W3Schools.com       Tutorial HMTL5
+http://wiki.ecmascript.org/lib/exe/fetch.php?media=harmony:ecma-262_6th_edition_final_draft_-04-14-15.pdf
+(standard Javascript 6)
+
+Comparaisons
+caniuse.com
+kangax.github.io/compat-table/es6/
+
+Graphiques
+http://techslides.com/50-javascript-charting-and-graphics-libraries
+
+Librairies CSS
+http://usablica.github.io/front-end-frameworks/compare.html
+http://getBootstrap.com
+
+
+Librairies mobiles
+http://propertycross.com/
+http://mobile-frameworks-comparison-chart.com/
+
+Librairies SPA  (Single Page Application)
+http://noeticforce.com/best-Javascript-frameworks-for-single-page-modern-web-applications
+
+

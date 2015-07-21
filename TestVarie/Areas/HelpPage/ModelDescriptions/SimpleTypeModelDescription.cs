@@ -1,0 +1,6 @@
+namespace TestVarie.Areas.HelpPage.ModelDescriptions
+{
+    public class SimpleTypeModelDescription : ModelDescription
+    {
+    }
+}

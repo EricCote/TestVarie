@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+
+<script type="text/javascript" >
+    var noms = new Array("Artemisa", "Dino", "Mathieu");
+    var noms2 = ["Artemisa", "Dino", "Mathieu"];
+
+
+    var emp = new Object();
+    emp.nom = "eric";
+    emp.salaire = 300000;
+    emp.faireTravail = function () {
+        alert(this.nom + " fait du travail");
+    }
+
+   // constructeur d'objet!
+    var Employe = function (nom, salaire) {
+        this.nom = nom;
+        this.salaire = salaire;
+    }
+
+
+ 
+
+    var result="";
+    for (var p in emp) {
+        result += p + " : " + emp[p] + "<br/>";
+    }
+
+    document.write(result);
+
+
+
+
+//    var adresse = {};
+//    adresse.rue = "Lebourgneuf";
+//    adresse.ville = "Québec";
+//    adresse.codePostal = "G1K 2M8";
+
+//    emp.adresse = adresse;
+
+
+
+//    var emp2 = { nom: "Dino",
+//                 adresse: { rue: "Bouvier",
+//                            ville: "Québec",
+//                            codePostal: "G4H 3B5" },
+//                 salaire: 350000, 
+//                 faireTravail: function () {
+//                   alert(this.nom + " fait du travail");
+//                 }
+
+//           };
+
+//           emp2.salaire += 25000;
+//           emp2.adresse.codePostal = "X1Y 9H3";
+
+
+
+
+
+
+
+//           //constructeur d'objet!
+//           var Employe = function (nom, salaire) {
+//               this.nom = nom;
+//               this.salaire = salaire;
+//           }
+
+//           var Patron = function (nom, salaire, bonus) {
+//               this.nom = nom;
+//               this.salaire = salaire;
+//               this.bonus = bonus;
+//           }
+
+//           Patron.prototype = new Employe();
+
+//           Date.prototype.dateFrancais = function () {
+//               return this.getDate() + "/" +
+//                      this.getMonth() + "/" + 
+//                      this.getFullYear();
+//           };
+
+//           var date = new Date();
+
+//           alert(date);
+//           alert(date.dateFrancais());
+
+//           Employe.prototype.faireTravail = function () {
+//               alert(this.nom + " fait du travail");
+//           };
+
+//           var emp3 = new Employe("Mathieu", 200000);
+//           var emp4 = new Employe("Pierre", 20000);
+//           var pat1 = new Patron("Joe", 1000000, 2000);
+
+//           emp3.faireTravail();
+//           emp4.faireTravail();
+//           pat1.faireTravail();
+
+//           Employe.prototype.faireTravail = function () {
+//               alert(this.nom + " does work");
+//           };
+
+//           emp3.faireTravail();
+//           emp4.faireTravail();
+//           pat1.faireTravail();
+
+//    x.longueur = function () {
+//        return this.length;
+//    }
+
+
+
+//    function sum() {
+//        var total = 0;
+//        for (var nombre in arguments) {
+//            total += arguments[nombre];
+//        }
+//        return total;
+//    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    var o = new Object();
+
+//    o.factorielle = function (x) {
+//        if (x === 10) {
+//            return 1;
+//        }
+//        return x * o.factorielle(x - 1);
+//    }
+
+
+//    alert(o.factorielle(3));
+
+
+
+//    for (var nombre in nombres) {
+//        document.write(nombres[nombre] + ", ");
+//    };
+
+
+</script>
+
+</body>
+</html>

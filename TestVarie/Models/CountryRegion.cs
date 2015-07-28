@@ -9,11 +9,9 @@ namespace TestVarie.Models
     [Table("Person.CountryRegion")]
     public partial class CountryRegion
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public CountryRegion()
         {
-            CountryRegionCurrencies = new HashSet<CountryRegionCurrency>();
-            SalesTerritories = new HashSet<SalesTerritory>();
-            StateProvinces = new HashSet<StateProvince>();
         }
 
         [Key]
@@ -26,10 +24,7 @@ namespace TestVarie.Models
 
         public DateTime ModifiedDate { get; set; }
 
-        public virtual ICollection<CountryRegionCurrency> CountryRegionCurrencies { get; set; }
-
-        public virtual ICollection<SalesTerritory> SalesTerritories { get; set; }
-
-        public virtual ICollection<StateProvince> StateProvinces { get; set; }
+        //[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        //public virtual ICollection<StateProvince> StateProvinces { get; set; }
     }
 }

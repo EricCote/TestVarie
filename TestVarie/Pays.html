@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Choisir Pays</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <form>
+        <select id="dropPays">
+            <option>vide</option>
+        </select>
+
+        <script src="Scripts/jquery-2.1.4.min.js"></script>
+        <script>
+            $(function () {
+                $("#dropPays").empty();
+                $.ajax({
+                    success: function (data) {
+                        $.each(data, function (i, item) {
+                            $("<option />")
+                                .text(item.Name)
+                                .val(item.CountryRegionCode)
+                                .appendTo("#dropPays");
+                        });
+                    },
+                    method: 'GET',
+                    url: '/api/pays'
+                });
+            });
+        </script>
+    </form>
+</body>
+</html>

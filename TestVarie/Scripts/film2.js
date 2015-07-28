@@ -17,10 +17,10 @@ $(function () {
     
     $.getJSON("https://api.themoviedb.org/3/genre/movie/list?api_key=" + apiKey,
     function (data) {
-        $.each(data.genres, function (i, item) {
+        $.each(data, function (i, item) {
             $("<option />")
-                .text(item.name)
-                .val(item.id)
+                .text(item.Name)
+                .val(item.CountryRegionCode)
                 .appendTo("#ListeCategories");
         });
     });

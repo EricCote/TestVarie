@@ -9,12 +9,6 @@ namespace TestVarie.Models
     [Table("Person.StateProvince")]
     public partial class StateProvince
     {
-        public StateProvince()
-        {
-            Addresses = new HashSet<Address>();
-            SalesTaxRates = new HashSet<SalesTaxRate>();
-        }
-
         public int StateProvinceID { get; set; }
 
         [Required]
@@ -37,12 +31,6 @@ namespace TestVarie.Models
 
         public DateTime ModifiedDate { get; set; }
 
-        public virtual ICollection<Address> Addresses { get; set; }
-
         public virtual CountryRegion CountryRegion { get; set; }
-
-        public virtual ICollection<SalesTaxRate> SalesTaxRates { get; set; }
-
-        public virtual SalesTerritory SalesTerritory { get; set; }
     }
 }

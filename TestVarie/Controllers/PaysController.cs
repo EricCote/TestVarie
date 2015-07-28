@@ -12,18 +12,17 @@ using TestVarie.Models;
 
 namespace TestVarie.Controllers
 {
-    public class CountryController : ApiController
+    public class PaysController : ApiController
     {
         private AW db = new AW();
 
-        // GET: api/Country
- 
-        public string[] GetCountryRegions()
+        // GET: api/Pays
+        public IQueryable<CountryRegion> GetCountryRegions()
         {
-            return db.CountryRegions.Select(c => c.Name).ToArray();
+            return db.CountryRegions;
         }
 
-        // GET: api/Country/5
+        // GET: api/Pays/5
         [ResponseType(typeof(CountryRegion))]
         public IHttpActionResult GetCountryRegion(string id)
         {
@@ -36,7 +35,7 @@ namespace TestVarie.Controllers
             return Ok(countryRegion);
         }
 
-        // PUT: api/Country/5
+        // PUT: api/Pays/5
         [ResponseType(typeof(void))]
         public IHttpActionResult PutCountryRegion(string id, CountryRegion countryRegion)
         {
@@ -71,7 +70,7 @@ namespace TestVarie.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
-        // POST: api/Country
+        // POST: api/Pays
         [ResponseType(typeof(CountryRegion))]
         public IHttpActionResult PostCountryRegion(CountryRegion countryRegion)
         {
@@ -101,7 +100,7 @@ namespace TestVarie.Controllers
             return CreatedAtRoute("DefaultApi", new { id = countryRegion.CountryRegionCode }, countryRegion);
         }
 
-        // DELETE: api/Country/5
+        // DELETE: api/Pays/5
         [ResponseType(typeof(CountryRegion))]
         public IHttpActionResult DeleteCountryRegion(string id)
         {

@@ -3,12 +3,81 @@
 <head>
     <title>Choisir Pays</title>
 	<meta charset="utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css' />
+    <style>
+        #cercle {
+            height:300px;
+            width:300px;
+            background-color:hotpink;
+            border-radius:50%;
+            text-align:center;
+            vertical-align:middle;
+            display:table-cell;
+            transform:rotate(-10deg);
+            font-size:4.5em;
+            font-family: 'Indie Flower', cursive;
+            background:radial-gradient(red, lightpink);
+        
+            transition-duration:1s,2s;
+            transition-timing-function:ease,linear;
+            transition-property:transform,font-size;
+            position:relative;
+        }
+
+            #cercle:hover {
+                 transform:rotate(20deg);
+                 font-size:3.5em;
+            }
+
+
+            @keyframes blink {
+                from {color: black;
+                       top:0px;
+                }
+                20% {color: white;
+                     top:50px;
+                }
+                to {color: white;
+                    top:50px;
+                }
+            }
+
+            #cercle
+             {
+                -moz-animation-name: blink;
+                -moz-animation-duration:1s;
+                -moz-animation-iteration-count:infinite;
+                -moz-animation-direction:alternate;
+                -webkit-animation-name: blink;
+                -webkit-animation-duration:1s;
+                -webkit-animation-iteration-count:infinite;
+                -webkit-animation-direction:alternate;
+                animation-name: blink;
+                animation-duration:1s;
+                animation-iteration-count:infinite;
+                animation-direction:alternate;
+            }
+
+            @media only screen and (max-width: 480px) {
+                #cercle {
+                  background:radial-gradient(blue, lightblue);
+                  
+                }
+	}
+
+    </style>
+
 </head>
 <body>
     <form>
         <select id="dropPays">
             <option>vide</option>
         </select>
+
+        <div id="cercle" >
+            Bonjour!
+        </div>
+
 
         <script src="Scripts/jquery-2.1.4.min.js"></script>
         <script>

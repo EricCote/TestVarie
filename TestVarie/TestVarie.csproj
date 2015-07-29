@@ -278,6 +278,7 @@
     <None Include="Properties\PublishProfiles\TestVaries.pubxml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="HTMLPage1.html" />
+    <Content Include="multicolonne.html" />
     <Content Include="Pays.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

@@ -15,6 +15,7 @@ howjs.com
 Actualités:
 sitepoint.com            Actualité Web
 alistapart.com           Design Web
+smashingmagazine.com     Design web
 webstandardssherpa.com
 
 
@@ -29,6 +30,7 @@ Docs HTML5
 developer.mozilla.org   Tutorial de Firefox 
 docs.webplatform.org    Documentation HTML5
 www.W3C.org             Standard HTML5
+www.w3.org/community/webed/wiki/HTML/Elements  Liste des elements
 www.W3Schools.com       Tutorial HMTL5
 http://wiki.ecmascript.org/lib/exe/fetch.php?media=harmony:ecma-262_6th_edition_final_draft_-04-14-15.pdf
 (standard Javascript 6)

@@ -1,7 +1,5 @@
 ﻿/// <reference path="../typings/jquery/jquery.d.ts"/>
 
-
-
 $(function () {
     var apiKey="626559fd3799f9466c64ea0daa420543";
     var baseUrl="";
@@ -12,15 +10,12 @@ $(function () {
         }
     );
     
-
-    
-    
     $.getJSON("https://api.themoviedb.org/3/genre/movie/list?api_key=" + apiKey,
     function (data) {
-        $.each(data, function (i, item) {
+        $.each(data.genres, function (i, item) {
             $("<option />")
-                .text(item.Name)
-                .val(item.CountryRegionCode)
+                .text(item.name)
+                .val(item.id)
                 .appendTo("#ListeCategories");
         });
     });

@@ -4,7 +4,7 @@ $DestinationZip = "."
 
 
 $web = new-object net.webclient
-$web.DownloadFile( 'http://download-codeplex.sec.s-msft.com/Download/Release?ProjectName=msftdbprodsamples&DownloadId=880661&FileTime=130507138100830000&Build=21028', $zipfile)
+$web.DownloadFile( 'http://download-codeplex.sec.s-msft.com/Download/Release?ProjectName=msftdbprodsamples&DownloadId=880661&FileTime=130507138100830000&Build=21031', $zipfile)
 
 $web.Dispose()
 

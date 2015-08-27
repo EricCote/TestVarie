@@ -63,10 +63,11 @@ p.initConfig = function()  {
     var req = new XMLHttpRequest();
     req.open('GET', getConfig);
     req.setRequestHeader('Accept', 'application/json');
+    console.log(req.timeout);
     req.onreadystatechange = function () {
        if (this.readyState === 4) {
-          var list = JSON.parse(this.responseText);
-          p.baseUrl = list.images.base_url;
+          var reponse = JSON.parse(this.responseText);
+          p.baseUrl = reponse.images.base_url;
        }
     };
 
@@ -77,7 +78,8 @@ p.initConfig = function()  {
 
 p.pageLoad = function () {
     //code pour aller chercher les films.
-    p.get("getFilmsButton").onclick = p.getMovies;
+    p.get("getFilmsButton").addEventListener("click", p.getMovies);
+
     p.initConfig();
 
     var getGenres="https://api.themoviedb.org/3/genre/movie/list?api_key=" + p.apiKey;
@@ -89,7 +91,7 @@ p.pageLoad = function () {
        if (this.readyState === 4) {
           var list = JSON.parse(this.responseText);
           var op;
-          for (var i = 0; i < list.genres.length; i += 1) {
+          for (var i = 0; i < list.genres.length; i++) {
              op = document.createElement("option");
              op.textContent = list.genres[i].name;
              op.value = list.genres[i].id;
@@ -101,4 +103,5 @@ p.pageLoad = function () {
     req.send();
 };
 
-window.onload = p.pageLoad;
+
+window.addEventListener("load", p.pageLoad)

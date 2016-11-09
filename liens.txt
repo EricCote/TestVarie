@@ -11,6 +11,8 @@ liveweave.com
 cssdeck.com
 dabblet.com
 howjs.com
+codeply.com
+bootply.com
 
 Actualités:
 sitepoint.com            Actualité Web
@@ -51,23 +53,7 @@ Librairies mobiles
 http://propertycross.com/
 http://mobile-frameworks-comparison-chart.com/
 
-Librairies SPA
+Librairies SPA  (Single Page Application)
 http://noeticforce.com/best-Javascript-frameworks-for-single-page-modern-web-applications
-
-
-
-
-
-
-
-
-
-
-
-SPA  
-   Single Page Application
-
-
-
 
 

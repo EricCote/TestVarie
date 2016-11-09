@@ -10,6 +10,7 @@
     <WebStackScaffolding_DbContextTypeFullName>TestVarie.Models.AW</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <UseIISExpress>true</UseIISExpress>
+    <ProjectView>ShowAllFiles</ProjectView>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>

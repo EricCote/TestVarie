@@ -249,6 +249,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\jquery-ui-slider-pips.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\pdfViewer.css" />
     <Content Include="default.html" />
     <Content Include="favicon.ico" />
     <Content Include="film.html" />
@@ -282,15 +283,21 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Doc\Doc1.pdf" />
+    <Content Include="Doc\Doc2.pdf" />
+    <Content Include="Doc\Doc3.pdf" />
     <None Include="Properties\PublishProfiles\TestVaries.pubxml" />
     <Content Include="HTMLPage1.html" />
     <Content Include="multicolonne.html" />
     <Content Include="Pays.html" />
+    <Content Include="pdfRender.html" />
+    <Content Include="PdfViewer.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\film.js" />
     <Content Include="Scripts\film2.js" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="film3.html" />
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />
     <Content Include="Scripts\jquery-3.1.1.slim.js" />
@@ -303,6 +310,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\pdfViewer.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />

@@ -247,6 +247,7 @@
       <DependentUpon>adventureWorks2014_data.mdf</DependentUpon>
     </Content>
     <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="Content\bootstrap-superhero.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -254,6 +255,9 @@
     <Content Include="Content\jquery-ui-slider-pips.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\pdfViewer.css" />
+    <Content Include="Content\Site.min.css">
+      <DependentUpon>Site.css</DependentUpon>
+    </Content>
     <Content Include="default.html" />
     <Content Include="favicon.ico" />
     <Content Include="film.html" />
@@ -291,6 +295,7 @@
     <Content Include="Doc\Doc2.pdf" />
     <Content Include="Doc\Doc3.pdf" />
     <Content Include="PdfFilter.ashx" />
+    <None Include="bundleconfig.json" />
     <None Include="Properties\PublishProfiles\TestVaries.pubxml" />
     <Content Include="HTMLPage1.html" />
     <Content Include="multicolonne.html" />
@@ -324,6 +329,7 @@
     <Content Include="Scripts\taxes.js" />
     <Content Include="Scripts\test.js" />
     <Content Include="slider.html" />
+    <Content Include="testBootStrap.html" />
     <Content Include="TestjQuery.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

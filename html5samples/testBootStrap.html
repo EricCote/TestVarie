@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Test BootStrap</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="Content/bootstrap-superhero.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="collapsed navbar-toggle" aria-expanded="false" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Revenu Québec</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Test1</a></li>
+                        <li><a href="#">Test2</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <h1>
+                Abonnez-vous!
+            </h1>
+        </header>
+        <article>
+            <p class="lead">  Abonnez-vous à notre newsletter.</p>
+
+            <form>
+                <fieldset>
+                    <legend>
+                        Informations
+                    </legend>
+                    <div class="row">
+
+                        <div class="form-group col-sm-5 col-md-4">
+                            <label for="txtNom">Nom :</label>
+                            <input class="form-control" type="text" name="txtNom" id="txtNom" />
+                        </div>
+                        <div class="form-group  col-sm-7 col-md-4">
+                            <label for="txtCourriel">Courriel :</label>
+                            <input class="form-control" type="email" name="txtCourriel" id="txtCourriel" />
+                        </div>
+                        <div class="form-group  col-sm-6 col-md-4">
+                            <label for="txtDate">Date de naissance :</label>
+                            <input class="form-control" type="date" name="txtDate" id="txtDate" />
+                        </div>
+                        <div class="form-group  col-sm-6">
+                            <button class="btn btn-default">
+                                Envoyer
+                                <span class="glyphicon glyphicon-user">
+
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+            </form>
+
+        </article>
+    </div>
+    <script src="Scripts/jquery-3.1.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+</body>
+</html>

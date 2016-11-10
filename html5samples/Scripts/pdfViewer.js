@@ -1,7 +1,7 @@
 ﻿/// <reference path="jquery-3.1.1.intellisense.js" />
 /// <reference path="C:\code\TestVarie\TestVarie\PdfViewer.html" />
 
-var listePdf = ["Doc/Doc1.pdf", "Doc/Doc2.pdf", "Doc/Doc3.pdf", "http://www.nyc.gov/html/nycppf/downloads/pdf/pension_sample_letter.pdf"]
+var listePdf = ["Doc/Doc1.pdf", "Doc/Doc2.pdf", "Doc/Doc3.pdf", "pdfFilter.ashx?pdfUrl=http://www.nyc.gov/html/nycppf/downloads/pdf/pension_sample_letter.pdf"]
 
 $(function () {
     $("button").click(function () {
